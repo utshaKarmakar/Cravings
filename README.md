@@ -239,21 +239,38 @@ Figma : <a href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?pag
 			 <td>Checkpoint 1</td> 
 			 <td>
 				 <ul>
-					 <li>Multi Authentication for User/Restaurant/ Admin
-					 </li>
-					<li>Multi Auth Forget Password</li>
-					<li></li>
-					<li></li>
+					 <li>Frontend, Backend, Database setup</li>
+					<li>Customer registration and login pages</li>
+					<li>customer authentication</li>
+					<li>fetching a list of restaurants and  menu display page</li>
+					<li>Table for User, Restaurants and MenuItem at Database</li>
 				</ul>
 			</td>
 		 </tr> 
 		 <tr> 
 			 <td>Checkpoint 2</td> 
-			 <td>php</td>   
+			 <td>
+				 <ul>
+					 <li>Customers My Account</li>
+					 <li>Order History</li>
+					 <li>Multi Item Cart functionality</li>
+					 <li>Payment options</li>
+					 <li>Approve or Reject new Restaurants registration by Admin</li>
+					 <li>Restaurant Dash Board</li>
+					 <li>Admin Dashboard</li>
+				 </ul>
+			 </td>   
 		 </tr> 
 		 <tr> 
 			 <td>Checkpoint 3</td> 
-			 <td>phpMyAdmin</td>  
+			 <td><ul>
+					 <li>Customers can search restaurants by name or foodItem name</li>
+					 <li>Customers can leave reviews for Restaurants</li>
+					 <li>Admin can remove inactive or problematic restaurants</li>
+					 <li>Payment options by Stripe</li>
+					 <li>Approve or Reject new Restaurants registration by Admin</li>
+				 </ul>
+				</td>  
 		 </tr> 
 	 </tbody> 
  </table>
