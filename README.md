@@ -83,6 +83,6 @@ The target audience for "Cravings" startup includes urban dwellers in cities lik
  </table>
   
 ## UI Design
-Figma Prototype Link : https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5
-<Link href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5" > Figma Prototype </Link>
+Figma : <a href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5">Figma Prototype</a>
+
 
