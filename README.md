@@ -96,9 +96,11 @@ Figma : <a href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?pag
 	<li>Multi User Authentication</li>
 	<li>Menu, Product, Gallery</li>
 	<li>CRUD operations</li>
+	<li>Search/Filter</li>
 	<li>Apply Coupon</li>
 	<li>Cart Page</li>
 	<li>Apply Cash on Delivery</li>
+	<li>Apply Online Payment</li>
 </ul>
 
 ### Restaurant Section
@@ -119,14 +121,110 @@ Figma : <a href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?pag
 	<li>Manage Order Form</li>
 </ul>
 
-### API Endpoints
-<ul>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
+##  API Endpoints
+### **Authentication**
 
+#### Customer Authentication
+
+-   **POST** `/api/customers/register` - Customer registration.
+-   **POST** `/api/customers/login` - Customer login.
+-   **POST** `/api/customers/logout` - Customer logout.
+-   **POST** `/api/customers/forgot-password` - Forgot password (email recovery).
+-   **POST** `/api/customers/reset-password` - Reset password with token.
+
+#### Restaurant Authentication
+
+-   **POST** `/api/restaurants/register` - Restaurant owner registration.
+-   **POST** `/api/restaurants/login` - Restaurant owner login.
+-   **POST** `/api/restaurants/logout` - Restaurant owner logout.
+-   **POST** `/api/restaurants/forgot-password` - Forgot password.
+-   **POST** `/api/restaurants/reset-password` - Reset password with token.
+
+#### Admin Authentication
+
+-   **POST** `/api/admin/login` - Admin login.
+-   **POST** `/api/admin/logout` - Admin logout.
+
+----------
+
+### **Customer Management**
+
+-   **GET** `/api/customers/me` - Fetch customer details (My Account).
+-   **PUT** `/api/customers/me` - Update customer account details.
+-   **DELETE** `/api/customers/me` - Delete customer account.
+
+----------
+
+### **Restaurant Management**
+
+#### By Restaurant Owner
+
+-   **GET** `/api/restaurants/me` - Fetch restaurant owner details.
+-   **PUT** `/api/restaurants/me` - Update restaurant owner details.
+-   **DELETE** `/api/restaurants/me` - Delete restaurant account.
+-   **GET** `/api/restaurants/my-orders` - View orders placed at their restaurant.
+-   **PATCH** `/api/restaurants/my-orders/:orderId` - Update order status (e.g., accepted, prepared, delivered).
+-   **PATCH** `/api/restaurants/menu/prices` - Update menu item prices.
+-   **POST** `/api/restaurants/menu` - Add a new menu item.
+-   **PUT** `/api/restaurants/menu/:itemId` - Edit menu item details.
+-   **DELETE** `/api/restaurants/menu/:itemId` - Remove menu item.
+
+#### By Admin
+
+-   **GET** `/api/restaurants` - Fetch all restaurants.
+-   **PATCH** `/api/restaurants/:restaurantId/approve` - Approve restaurant registration.
+-   **DELETE** `/api/restaurants/:restaurantId` - Remove restaurant.
+
+----------
+
+### **Order Management**
+
+#### Customer Orders
+
+-   **POST** `/api/orders` - Place an order with multiple items from a restaurant.
+-   **GET** `/api/orders` - View all orders by the customer.
+-   **GET** `/api/orders/:orderId` - View details of a specific order.
+-   **DELETE** `/api/orders/:orderId` - Cancel an order (if not yet processed).
+
+#### Payment Options
+
+-   **POST** `/api/payments/cash-on-delivery` - Apply cash on delivery.
+-   **POST** `/api/payments/online` - Apply online payment (e.g., via bKash, card).
+-   **POST** `/api/payments/verify/:paymentId` - Verify online payment.
+
+----------
+
+### **Menu Management**
+
+-   **GET** `/api/menu` - Fetch menu for a restaurant.
+-   **GET** `/api/menu/:itemId` - Fetch details of a specific menu item.
+
+----------
+
+### **Admin Panel Management**
+
+-   **GET** `/api/admin/dashboard` - Admin dashboard data (e.g., total sales, active restaurants).
+-   **GET** `/api/admin/customers` - Fetch all customers.
+-   **DELETE** `/api/admin/customers/:customerId` - Remove a customer.
+-   **GET** `/api/admin/restaurants` - Fetch all restaurants.
+-   **PATCH** `/api/admin/restaurants/:restaurantId` - Modify restaurant details.
+-   **GET** `/api/admin/orders` - View all orders.
+
+----------
+
+### **Search and Filtering**
+
+-   **GET** `/api/restaurants/search` - Search restaurants by name, cuisine, or location.
+-   **GET** `/api/menu/search` - Search menu items across restaurants.
+
+----------
+
+### **Reviews and Ratings**
+
+-   **POST** `/api/reviews` - Add a review for a restaurant.
+-   **GET** `/api/reviews/:restaurantId` - Fetch reviews for a restaurant.
+-   **PATCH** `/api/reviews/:reviewId` - Edit a review.
+-   **DELETE** `/api/reviews/:reviewId` - Delete a review.
 
 ## Milestones
 <table>
