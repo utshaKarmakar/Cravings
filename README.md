@@ -25,7 +25,7 @@ Cravings is an online multi-restaurant food ordering app offering diverse cuisin
 		 <tr> 
 			 <td>20220104089</td> 
 			 <td>Afnan Zaman Ifty</td> 
-			 <td>Row 2, Col 3</td> 
+			 <td>zamanafnan62@gmail.com</td> 
 			 <td>Backend</td>   
 		 </tr> 
 		 <tr> 
@@ -37,7 +37,7 @@ Cravings is an online multi-restaurant food ordering app offering diverse cuisin
 		 <tr> 
 			 <td>20220104099</td> 
 			 <td>Prottoy Roy</td> 
-			 <td>Row 4, Col 3</td> 
+			 <td>prottoyroy99@gmail.com</td> 
 			 <td>Frontend</td>   
 		 </tr> 
 	 </tbody> 
@@ -84,5 +84,47 @@ The target audience for "Cravings" startup includes urban dwellers in cities lik
   
 ## UI Design
 Figma : <a href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5">Figma Prototype</a>
+
+## Project Features
+<ul>
+	<li>Multi User Authentication</li>
+	<li>Customers Section</li>
+	<li>Restaurant Owners Section</li>
+	<li>Admit Panel Section</li>
+	<li>CRUD operations</li>
+	<li>API Endpoints
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</li>
+	<li>Payment Gateway</li>
+</ul>
+
+## Milestones
+<table>
+	 <thead> 
+		 <tr> 
+			 <th>Milestones</th> 
+			 <th>We Cover</th> 
+		 </tr> 
+	 </thead> 
+	 <tbody> 
+		 <tr> 
+			 <td>Checkpoint 1</td> 
+			 <td>Laravel</td> 
+		 </tr> 
+		 <tr> 
+			 <td>Checkpoint 2</td> 
+			 <td>php</td>   
+		 </tr> 
+		 <tr> 
+			 <td>Checkpoint 3</td> 
+			 <td>phpMyAdmin</td>  
+		 </tr> 
+	 </tbody> 
+ </table>
 
 
