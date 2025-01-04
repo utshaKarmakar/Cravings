@@ -76,6 +76,10 @@ The target audience for "Cravings" startup includes urban dwellers in cities lik
 			 <td>phpMyAdmin</td>  
 		 </tr> 
 		 <tr> 
+			 <td>Payment Process</td> 
+			 <td>Stripe</td> 
+		 </tr> 
+		 <tr> 
 			 <td>Rendering Method</td> 
 			 <td>CSR (Client-Side Rendering)</td> 
 		 </tr> 
@@ -83,25 +87,46 @@ The target audience for "Cravings" startup includes urban dwellers in cities lik
  </table>
   
 ## UI Design
-Figma : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cravings?node-id=0-1&t=eEqsDJYjKb3OKoo5-1">Figma Prototype</a>
+Figma : <a href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5">Figma Prototype</a>
 
 ## Project Features
+
+### User Section
 <ul>
 	<li>Multi User Authentication</li>
-	<li>Customers Section</li>
-	<li>Restaurant Owners Section</li>
-	<li>Admit Panel Section</li>
+	<li>Menu, Product, Gallery</li>
 	<li>CRUD operations</li>
-	<li>API Endpoints
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</li>
-	<li>Payment Gateway</li>
+	<li>Apply Coupon</li>
+	<li>Cart Page</li>
+	<li>Apply Cash on Delivery</li>
 </ul>
+
+### Restaurant Section
+<ul>
+	<li>Multi Restaurant Authentication</li>
+	<li>Multi Admin for a single Restaurant</li>
+	<li>Menu, Product, Coupon, Gallery for new Customer</li>
+	<li>CRUD operations</li>
+	<li>Order Form</li>
+	<li>Download Order Invoice</li>
+</ul>
+
+### Admin Section
+<ul>
+	<li>Multi Admin Authentication</li>
+	<li>Forget Password</li>
+	<li>Admin Panel</li>
+	<li>Manage Order Form</li>
+</ul>
+
+### API Endpoints
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
 
 ## Milestones
 <table>
@@ -114,7 +139,15 @@ Figma : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cravings?no
 	 <tbody> 
 		 <tr> 
 			 <td>Checkpoint 1</td> 
-			 <td>Laravel</td> 
+			 <td>
+				 <ul>
+					 <li>Multi Authentication for User/Restaurant/ Admin
+					 </li>
+					<li>Multi Auth Forget Password</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</td>
 		 </tr> 
 		 <tr> 
 			 <td>Checkpoint 2</td> 
