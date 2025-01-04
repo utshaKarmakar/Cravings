@@ -1,3 +1,5 @@
+  
+
 # Cravings
 Cravings is an online multi-restaurant food ordering app offering diverse cuisines. Explore menus, customize meals, and enjoy quick delivery. With features like favorites, order tracking, and secure payments, it simplifies food ordering. Craving is your go-to platform for delicious meals delivered effortlessly.
 
@@ -29,7 +31,7 @@ Cravings is an online multi-restaurant food ordering app offering diverse cuisin
 		 <tr> 
 			 <td>20220104080</td> 
 			 <td>Utsha Karmakar</td> 
-			 <td>Row 3, Col 3</td> 
+			 <td>utshakarmakar04109@gmail.com</td> 
 			 <td>Backend</td>   
 		 </tr> 
 		 <tr> 
@@ -79,3 +81,8 @@ The target audience for "Cravings" startup includes urban dwellers in cities lik
 		 </tr> 
 	 </tbody> 
  </table>
+  
+## UI Design
+Figma Prototype Link : https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5
+<Link href="https://www.figma.com/proto/mIyp8Q47ff0GPxNW5YWKlt/Cravings?page-id=0%3A1&node-id=14-5&p=f&viewport=1315%2C178%2C0.04&t=rgZuKlu27URQAS9m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=14%3A5" > Figma Prototype </Link>
+
