@@ -2,7 +2,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                <script>document.write(new Date().getFullYear())</script> © Minia.
+                <script>document.write(new Date().getFullYear())</script> 
+                © Cravings
             </div>
 
         </div>
