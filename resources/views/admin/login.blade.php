@@ -20,7 +20,7 @@
     @endif    
 
     @if (Session::has('success'))
-        <li>{{ Session::get('sucess')}}</li>
+        <li>{{ Session::get('success')}}</li>
     @endif   
 
     <form action="{{route('admin.login_submit')}}" method="post">
