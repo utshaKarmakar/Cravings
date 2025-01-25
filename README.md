@@ -248,7 +248,6 @@ Figma Design   : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cr
                     <li>Restaurant authentication</li>
                     <li>Restaurant panel setup</li>
 					<li>fetching a list of restaurants and  menu display page</li>
-					<li>Table for User, Restaurants and MenuItem at Database</li>
 				</ul>
 			</td>
 		 </tr> 
@@ -256,6 +255,7 @@ Figma Design   : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cr
 			 <td>Checkpoint 2</td> 
 			 <td>
 				 <ul>
+                     <li>Table for User, Restaurants and MenuItem at Database</li>
 					 <li>Customers My Account</li>
 					 <li>Order History</li>
 					 <li>Multi Item Cart functionality</li>
