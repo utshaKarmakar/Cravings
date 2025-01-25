@@ -247,7 +247,9 @@ Figma Design   : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cr
                     <li>Admin panel setup</li>
                     <li>Restaurant authentication</li>
                     <li>Restaurant panel setup</li>
-					<li>fetching a list of restaurants and  menu display page</li>
+                    <li>Customer Profile Setup</li>
+                    <li>Admin Backend Category</li>
+                    <li>fetching a list of restaurants and  menu display page</li>
 				</ul>
 			</td>
 		 </tr> 
