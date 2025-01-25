@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Admin Login</title>
+        <title>Admin Forget Password</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -40,8 +40,8 @@
                                     </div>
                                     <div class="auth-content my-auto">
                                         <div class="text-center">
-                                            <h5 class="mb-0">Welcome Back !</h5>
-                                            <p class="text-muted mt-2">Sign in to continue to Cravings.</p>
+                                            <h5 class="mb-0">Forget Password Page</h5>
+                                            <p class="text-muted mt-2">Change password to continue Cravings.</p>
                                         </div>
 
     @if ($errors -> any())
@@ -66,33 +66,9 @@
         <label class="form-label">Email</label>
         <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
     </div>
-    <div class="mb-3">
-        <div class="d-flex align-items-start">
-            <div class="flex-grow-1">
-                <label class="form-label">Password</label>
-            </div>
-            <div class="flex-shrink-0">
-                <div class="">
-                    <a href="{{ route('admin.forget_password') }}" class="text-muted">Forgot password?</a>
-                </div>
-            </div>
-        </div>
         
-        <div class="input-group auth-pass-inputgroup">
-            <input type="password" name="password" class="form-control" placeholder="Enter password" aria-label="Password" aria-describedby="password-addon">
-            <button class="btn btn-light shadow-none ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
-        </div>
-    </div>
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-check">
-                
-            </div>  
-        </div>
-        
-    </div>
     <div class="mb-3">
-        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Log In</button>
+        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">EMAIL PASSWORD RESET LINK</button>
     </div>
 </form>
 
