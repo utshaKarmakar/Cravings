@@ -241,9 +241,12 @@ Figma Design   : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cr
 			 <td>Checkpoint 1</td> 
 			 <td>
 				 <ul>
-					 <li>Frontend, Backend, Database setup</li>
+					<li>Frontend, Backend, Database setup</li>
 					<li>Customer registration and login pages</li>
 					<li>customer authentication</li>
+                    <li>Admin panel setup</li>
+                    <li>Restaurant authentication</li>
+                    <li>Restaurant panel setup</li>li>
 					<li>fetching a list of restaurants and  menu display page</li>
 					<li>Table for User, Restaurants and MenuItem at Database</li>
 				</ul>
