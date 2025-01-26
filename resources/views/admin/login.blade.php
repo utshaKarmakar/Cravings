@@ -169,11 +169,12 @@
                             <i class="bx bxs-quote-alt-left text-success display-6"></i>
 
                             <h4 class="mt-4 fw-medium lh-base text-white">
-                                “Craving the ultimate cheesy delight? At Perfect Pizza Paradise, 
-                                we serve freshly baked pizzas topped with premium ingredients and a whole lot of love! 
-                                Whether you’re a fan of classic Margherita or bold BBQ Chicken, we’ve got you covered. 
-                                Pair it with our garlic bread and a fizzy drink for a meal that hits the spot. 
-                                Order now and get your slice of happiness delivered hot and fresh!”
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                In reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                                Nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                             </h4>
                             <div class="mt-4 pt-3 pb-5">
                                 <div class="d-flex align-items-start">
@@ -181,8 +182,8 @@
                                         <img src="{{ asset('backend/assets/images/users/avatar-0.jpg') }}" class="avatar-md img-fluid rounded-circle" alt="...">
                                     </div>
                                     <div class="flex-grow-1 ms-3 mb-4">
-                                        <h5 class="font-size-18 text-white">Pizza Paradise</h5>
-                                        <p class="mb-0 text-white-50">Pizza</p>
+                                        <h5 class="font-size-18 text-white">Person 1</h5>
+                                        <p class="mb-0 text-white-50">Developer</p>
                                     </div>
                                 </div>
                             </div>
@@ -194,10 +195,12 @@
                             <i class="bx bxs-quote-alt-left text-success display-6"></i>
 
                             <h4 class="mt-4 fw-medium lh-base text-white">
-                                Got fried chicken on your mind? KFC King of Crunch is here to satisfy your cravings with our signature golden, 
-                                crispy chicken. From juicy buckets to spicy zingers and buttery biscuits, every bite is a burst of flavor. 
-                                Don’t miss our combo deals for an affordable feast that’s perfect for sharing. 
-                                Click now to order your favorite KFC meal and feel the crunch!
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                In reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                                Nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                             </h4>
                             <div class="mt-4 pt-3 pb-5">
                                 <div class="d-flex align-items-start">
@@ -205,9 +208,9 @@
                                         <img src="{{ asset('backend/assets/images/users/avatar-0.jpg') }}" class="avatar-md img-fluid rounded-circle" alt="...">
                                     </div>
                                     <div class="flex-grow-1 ms-3 mb-4">
-                                        <h5 class="font-size-18 text-white">KFC
+                                        <h5 class="font-size-18 text-white">Person 2
                                         </h5>
-                                        <p class="mb-0 text-white-50">Chicken Fry</p>
+                                        <p class="mb-0 text-white-50">Developer</p>
                                     </div>
                                 </div>
                             </div>
@@ -219,18 +222,20 @@
                             <i class="bx bxs-quote-alt-left text-success display-6"></i>
 
                             <h4 class="mt-4 fw-medium lh-base text-white">
-                                Transport your taste buds to a world of spice and aroma with Royal Biryani Bliss. 
-                                Our perfectly cooked basmati rice, tender meat, and secret blend of spices make every biryani unforgettable. 
-                                Try our special chicken, mutton, or veg biryani, served with refreshing raita and tangy salad. Hungry? 
-                                Dive into the royal experience and order now for a soul-satisfying meal delivered to your door!
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                In reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                                Nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                             </h4>
                             <div class="mt-4 pt-3 pb-5">
                                 <div class="d-flex align-items-start">
                                     <img src="{{ asset('backend/assets/images/users/avatar-0.jpg') }}"
                                         class="avatar-md img-fluid rounded-circle" alt="...">
                                     <div class="flex-1 ms-3 mb-4">
-                                        <h5 class="font-size-18 text-white">Kacchi</h5>
-                                        <p class="mb-0 text-white-50">Biriyani</p>
+                                        <h5 class="font-size-18 text-white">Person-3</h5>
+                                        <p class="mb-0 text-white-50">Developer</p>
                                     </div>
                                 </div>
                             </div>
