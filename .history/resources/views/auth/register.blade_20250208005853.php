@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Askbootstrap">
       <meta name="author" content="Askbootstrap">
-      <title>User Register - Online Food Ordering </title>
+      <title>User Login - Online Food Ordering </title>
       <!-- Favicon Icon -->
       <link rel="icon" type="image/png" href="{{ asset('frontend/img/favicon.png') }}">
       <!-- Bootstrap core CSS-->
@@ -38,41 +38,25 @@
                    
                        @if (Session::has('error'))
                            <li>{{ Session::get('error') }}</li>
-                       @endif
+                       @endifgit
                        @if (Session::has('success'))
                            <li>{{ Session::get('success') }}</li>
                        @endif   
-
-
                        <form method="POST" action="{{ route('register') }}">
                        @csrf
                        <div class="form-label-group">
                           <input type="text" name="name" id="ptext" class="form-control" placeholder="Email address">
                            <label for="ptext">Name </label>
                            </div>
-
                            <div class="form-label-group">
                               <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address">
-                                  <label for="inputEmail">Email </label>
-                            </div>
-
-
-                            <div class="form-label-group">
-                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Email address">
-                <label for="inputPassword">Password </label>
-            </div>
-            <div class="form-label-group">
-                <input type="password" name="password_confirmation" id="inputPassword1" class="form-control" placeholder="Password">
-                <label for="inputPassword1">Confirm Password</label>
-            </div>
-
-
-
+             <label for="inputEmail">Email </label>
+        </div>
                               <div class="custom-control custom-checkbox mb-3">
                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
                                  <label class="custom-control-label" for="customCheck1">Remember password</label>
                               </div>
-                              <button type="submit" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign Up</button>
+                              <button type="submit" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign in</button>
                             <div class="text-center pt-3">
                               Don’t have an account? <a class="font-weight-bold" href="{{ route('register')}}">Sign Up</a>
                               </div>

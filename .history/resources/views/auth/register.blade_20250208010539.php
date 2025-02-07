@@ -38,12 +38,10 @@
                    
                        @if (Session::has('error'))
                            <li>{{ Session::get('error') }}</li>
-                       @endif
+                       @endifgit
                        @if (Session::has('success'))
                            <li>{{ Session::get('success') }}</li>
                        @endif   
-
-
                        <form method="POST" action="{{ route('register') }}">
                        @csrf
                        <div class="form-label-group">
@@ -72,7 +70,7 @@
                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
                                  <label class="custom-control-label" for="customCheck1">Remember password</label>
                               </div>
-                              <button type="submit" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign Up</button>
+                              <button type="submit" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign UP</button>
                             <div class="text-center pt-3">
                               Don’t have an account? <a class="font-weight-bold" href="{{ route('register')}}">Sign Up</a>
                               </div>

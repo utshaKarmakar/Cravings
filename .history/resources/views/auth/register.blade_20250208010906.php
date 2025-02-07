@@ -38,12 +38,12 @@
                    
                        @if (Session::has('error'))
                            <li>{{ Session::get('error') }}</li>
-                       @endif
+                       @endifgit
                        @if (Session::has('success'))
                            <li>{{ Session::get('success') }}</li>
                        @endif   
 
-
+                       
                        <form method="POST" action="{{ route('register') }}">
                        @csrf
                        <div class="form-label-group">
