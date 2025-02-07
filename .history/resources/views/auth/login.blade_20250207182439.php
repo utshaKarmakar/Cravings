@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
+   <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Askbootstrap">
       <meta name="author" content="Askbootstrap">
-      <title>User Login - Online Food Ordering </title>
+      <title>Osahan Eat - Online Food Ordering Website HTML Template</title>
       <!-- Favicon Icon -->
-      <link rel="icon" type="image/png" href="{{ asset('frontend/img/favicon.png') }}">
+      <link rel="icon" type="image/png" href="img/favicon.png">
       <!-- Bootstrap core CSS-->
-      <link href="{{ asset('frontend/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Font Awesome-->
-      <link href="{{ asset('frontend/vendor/fontawesome/css/all.min.css') }}" rel="stylesheet">
+      <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
       <!-- Font Awesome-->
-      <link href="{{ asset('frontend/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+      <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
       <!-- Select2 CSS-->
-      <link href="{{ asset('frontend/vendor/select2/css/select2.min.css') }}" rel="stylesheet">
+      <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
       <!-- Custom styles for this template-->
-      <link href="{{ asset('frontend/css/osahan.css') }}" rel="stylesheet">
+      <link href="css/osahan.css" rel="stylesheet">
    </head>
    <body class="bg-white">
       <div class="container-fluid">
@@ -38,18 +38,22 @@
                    
                        @if (Session::has('error'))
                            <li>{{ Session::get('error') }}</li>
-                       @endifgit
+                       @endif
                        @if (Session::has('success'))
                            <li>{{ Session::get('success') }}</li>
                        @endif   
-                           <form method="POST" action="{{ route('login') }}">
-                                @csrf
+
+
+
+
+                           <form method="POST" action="{{ route('login') }}
+           @csrf
                               <div class="form-label-group">
-                                 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address">
-                                 <label for="inputEmail">Email </label>
+                                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
+                                 <label for="inputEmail">Email address / Mobile</label>
                               </div>
                               <div class="form-label-group">
-                                 <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password">
+                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password">
                                  <label for="inputPassword">Password</label>
                               </div>
                               <div class="custom-control custom-checkbox mb-3">
