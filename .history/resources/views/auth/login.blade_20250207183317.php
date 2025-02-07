@@ -38,12 +38,16 @@
                    
                        @if (Session::has('error'))
                            <li>{{ Session::get('error') }}</li>
-                       @endifgit
+                       @endif
                        @if (Session::has('success'))
                            <li>{{ Session::get('success') }}</li>
                        @endif   
-                           <form method="POST" action="{{ route('login') }}">
-                                @csrf
+
+
+
+
+                           <form method="POST" action="{{ route('login') }}
+           @csrf
                               <div class="form-label-group">
                                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address">
                                  <label for="inputEmail">Email </label>

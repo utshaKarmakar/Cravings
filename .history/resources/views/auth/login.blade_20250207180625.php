@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
+   <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Askbootstrap">
       <meta name="author" content="Askbootstrap">
-      <title>User Login - Online Food Ordering </title>
+      <title>Osahan Eat - Online Food Ordering Website HTML Template</title>
       <!-- Favicon Icon -->
-      <link rel="icon" type="image/png" href="{{ asset('frontend/img/favicon.png') }}">
+      <link rel="icon" type="image/png" href="img/favicon.png">
       <!-- Bootstrap core CSS-->
-      <link href="{{ asset('frontend/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Font Awesome-->
-      <link href="{{ asset('frontend/vendor/fontawesome/css/all.min.css') }}" rel="stylesheet">
+      <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
       <!-- Font Awesome-->
-      <link href="{{ asset('frontend/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+      <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
       <!-- Select2 CSS-->
-      <link href="{{ asset('frontend/vendor/select2/css/select2.min.css') }}" rel="stylesheet">
+      <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
       <!-- Custom styles for this template-->
-      <link href="{{ asset('frontend/css/osahan.css') }}" rel="stylesheet">
+      <link href="css/osahan.css" rel="stylesheet">
    </head>
    <body class="bg-white">
       <div class="container-fluid">
@@ -30,35 +30,22 @@
                      <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto pl-5 pr-5">
                            <h3 class="login-heading mb-4">Welcome back!</h3>
-                           @if ($errors->any())
-                           @foreach ($errors->all() as $error)
-                               <li>{{$error }}</li>
-                           @endforeach
-                       @endif
-                   
-                       @if (Session::has('error'))
-                           <li>{{ Session::get('error') }}</li>
-                       @endifgit
-                       @if (Session::has('success'))
-                           <li>{{ Session::get('success') }}</li>
-                       @endif   
-                           <form method="POST" action="{{ route('login') }}">
-                                @csrf
+                           <form>
                               <div class="form-label-group">
-                                 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address">
-                                 <label for="inputEmail">Email </label>
+                                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
+                                 <label for="inputEmail">Email address / Mobile</label>
                               </div>
                               <div class="form-label-group">
-                                 <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password">
+                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password">
                                  <label for="inputPassword">Password</label>
                               </div>
                               <div class="custom-control custom-checkbox mb-3">
                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
                                  <label class="custom-control-label" for="customCheck1">Remember password</label>
                               </div>
-                              <button type="submit" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign in</button>
-                            <div class="text-center pt-3">
-                              Don’t have an account? <a class="font-weight-bold" href="{{ route('register')}}">Sign Up</a>
+                              <a href="index.html" class="btn btn-lg btn-outline-primary btn-block btn-login text-uppercase font-weight-bold mb-2">Sign in</a>
+                              <div class="text-center pt-3">
+                                 Don’t have an account? <a class="font-weight-bold" href="register.html">Sign Up</a>
                               </div>
                            </form>
                            <hr class="my-4">
@@ -78,13 +65,13 @@
             </div>
          </div>
       </div>
-        <!-- jQuery -->
-   <script src="{{ asset('frontend/vendor/jquery/jquery-3.3.1.slim.min.js') }}"></script>
-   <!-- Bootstrap core JavaScript-->
-   <script src="{{ asset('frontend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-   <!-- Select2 JavaScript-->
-   <script src="{{ asset('frontend/vendor/select2/js/select2.min.js') }}"></script>
-   <!-- Custom scripts for all pages-->
-   <script src="{{ asset('frontend/js/custom.js') }}"></script>
+      <!-- jQuery -->
+      <script src="vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+      <!-- Bootstrap core JavaScript-->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Select2 JavaScript-->
+      <script src="vendor/select2/js/select2.min.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="js/custom.js"></script>
    </body>
 </html>
