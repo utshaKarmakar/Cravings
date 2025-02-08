@@ -52,35 +52,22 @@ Route::post('/admin/reset_password_submit', [AdminController::class, 'AdminReset
 
 // Clients (Restaurants Route)
 
-Route::get('/client/login', [ClientController::class, 'ClientLogin'])->name('client.login');
-Route::post('/client/login_submit', [ClientController::class, 'ClientLoginSubmit'])->name('client.login_submit');
+Route::middleware('client')->group(function () {
+    Route::get('/client/client_dashboard', [ClientController::class, 'ClientDashboard'])->name('client.dashboard');
+    Route::get('/client/client_profile', [ClientController::class, 'ClientProfile'])->name('client.profile');
 
-Route::get('/client/register', [ClientController::class, 'ClientRegister'])->name('client.register');
-Route::post('/client/register/submit', [ClientController::class, 'ClientRegisterSubmit'])->name('client.register.submit');
+    Route::post('/client/profile/client_store', [ClientController::class, 'ClientProfileStore'])->name('client.profile.store');
+    Route::get('/client/change/client_password', [ClientController::class, 'ClientChangePassword'])->name('client.change.password');
+    Route::post('/client/password/client_update', [ClientController::class, 'ClientPasswordUpdate'])->name('client.password.update');
+});
 
-Route::get('/client/logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
+Route::get('/client/client_login', [ClientController::class, 'ClientLogin'])->name('client.login');
+Route::post('/client/client_login_submit', [ClientController::class, 'ClientLoginSubmit'])->name('client.login_submit');
 
-// Password Reset Routes
-Route::get('/client/forget_password', [ClientController::class, 'ClientForgetPassword'])->name('client.forget_password');
+Route::get('/client/client_logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
+
+Route::get('/client/client_forget_password', [ClientController::class, 'ClientForgetPassword'])->name('client.forget_password');
 Route::post('/client/password_submit', [ClientController::class, 'ClientPasswordSubmit'])->name('client.password_submit');
 
 Route::get('/client/reset_password/{token}/{email}', [ClientController::class, 'ClientResetPassword']);
 Route::post('/client/reset_password_submit', [ClientController::class, 'ClientResetPasswordSubmit'])->name('client.reset_password_submit');
-
-// Client Dashboard and Profile Routes (Protected by Middleware)
-Route::middleware('client')->group(function () {
-    Route::get('/client/dashboard', [ClientController::class, 'ClientDashboard'])->name('client.dashboard');
-    Route::get('/client/profile', [ClientController::class, 'ClientProfile'])->name('client.profile');
-    Route::post('/client/profile/store', [ClientController::class, 'ClientProfileStore'])->name('client.profile.store');
-    Route::get('/client/change/password', [ClientController::class, 'ClientChangePassword'])->name('client.change.password');
-    Route::post('/client/password/update', [ClientController::class, 'ClientPasswordUpdate'])->name('client.password.update');
-    
-}); 
-
-Route::get('/client/login', [ClientController::class, 'ClientLogin'])->name('client.login');
-Route::get('/client/register', [ClientController::class, 'ClientRegister'])->name('client.register');
-Route::post('/client/register/submit', [ClientController::class, 'ClientRegisterSubmit'])->name('client.register.submit');
-Route::post('/client/login_submit', [ClientController::class, 'ClientLoginSubmit'])->name('client.login_submit');
-Route::get('/client/logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
-
-

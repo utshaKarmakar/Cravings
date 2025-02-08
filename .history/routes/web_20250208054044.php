@@ -77,10 +77,10 @@ Route::middleware('client')->group(function () {
     
 }); 
 
-Route::get('/client/login', [ClientController::class, 'ClientLogin'])->name('client.login');
-Route::get('/client/register', [ClientController::class, 'ClientRegister'])->name('client.register');
-Route::post('/client/register/submit', [ClientController::class, 'ClientRegisterSubmit'])->name('client.register.submit');
-Route::post('/client/login_submit', [ClientController::class, 'ClientLoginSubmit'])->name('client.login_submit');
-Route::get('/client/logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
+Route::get('/client/client_login', [ClientController::class, 'ClientLogin'])->name('client.login');
+Route::get('/client/client_register', [ClientController::class, 'ClientRegister'])->name('client.register');
+Route::post('/client/client_register_submit', [ClientController::class, 'ClientRegisterSubmit'])->name('client.register.submit');
+Route::post('/client/client_login_submit', [ClientController::class, 'ClientLoginSubmit'])->name('client.login.submit');
+Route::get('/client/client_logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
 
 
