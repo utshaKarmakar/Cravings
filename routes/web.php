@@ -2,6 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
+
+
+/*Route::get('/', function () {
 
 use App\Http\Controllers\AdminController;
 
@@ -10,6 +15,12 @@ use App\Http\Controllers\ClientController;
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+
+Route::get('/', [UserController::class, 'Index'])->name('index');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -22,6 +33,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
 
 Route::middleware('admin')->group(function (){
     Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
@@ -87,5 +99,6 @@ Route::post('/client/register/submit', [ClientController::class, 'ClientRegister
 
 // Client er logout
 Route::get('/client/logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
+
 
 
