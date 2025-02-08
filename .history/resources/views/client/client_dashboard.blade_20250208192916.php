@@ -51,7 +51,7 @@
             <!-- ============================================================== -->
 <div class="main-content">
 
-     @yield('client') <!-- eita id name ke client dara declare korlam,index e section ei id e call krbe -->
+     @yield('client') <!-- it 
 <!-- End Page-content -->
 
 @include('client.body.footer')
