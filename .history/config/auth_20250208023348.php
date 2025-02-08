@@ -78,7 +78,7 @@ return [
         ],
         'clients' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\Client::class),
+            'model' => env('AUTH_MODEL', App\Models\Admin::class),
         ],
         // 'users' => [
         //     'driver' => 'database',
