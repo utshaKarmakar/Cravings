@@ -57,8 +57,7 @@
     
     @if (Session::has('success'))
         <li>{{ Session::get('success') }}</li>
-    @endif   
-                             
+    @endif                            
 <form class="mt-4 pt-2" action="{{ route('client.login_submit') }}"  method="post">
     @csrf
 
