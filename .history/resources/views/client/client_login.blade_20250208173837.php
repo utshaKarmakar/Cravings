@@ -46,19 +46,17 @@
                                 </div>
 
     @if ($errors->any())
-        @foreach ($errors->all() as $error)
-            <li>{{$error }}</li>
-        @endforeach
-    @endif
+    @foreach ($errors->all() as $error)
+        <li>{{$error }}</li>
+    @endforeach
+@endif
 
-    @if (Session::has('error'))
-        <li>{{ Session::get('error') }}</li>
-    @endif
-    
-    @if (Session::has('success'))
-        <li>{{ Session::get('success') }}</li>
-    @endif   
-                             
+@if (Session::has('error'))
+    <li>{{ Session::get('error') }}</li>
+@endif
+@if (Session::has('success'))
+    <li>{{ Session::get('success') }}</li>
+@endif                            
 <form class="mt-4 pt-2" action="{{ route('client.login_submit') }}"  method="post">
     @csrf
 

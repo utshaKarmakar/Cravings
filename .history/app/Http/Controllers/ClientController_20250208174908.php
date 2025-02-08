@@ -64,7 +64,7 @@ class ClientController extends Controller
     // End Method 
 
     public function ClientDashboard(){
-        return view('client.client_dashboard');
+        return view('client.index');
     }
     // End Method 
 
@@ -137,8 +137,8 @@ class ClientController extends Controller
         $id = Auth::guard('client')->id();
         $profileData = Client::find($id);
         return view('client.client_change_Password',compact('profileData'));
-    }
-    // End Method 
+     }
+      // End Method 
 
     public function ClientPasswordUpdate(Request $request){
         $client = Auth::guard('client')->user();

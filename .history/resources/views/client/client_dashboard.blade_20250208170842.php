@@ -128,10 +128,10 @@
             case 'error':
             toastr.error(" {{ Session::get('message') }} ");
             break; 
-        }
+         }
           
         </script>
-    @endif
+        @endif
         
     </body>
 

@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Client Login </title>
+        <title>Restaurant Register </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -21,7 +21,6 @@
         <!-- App Css-->
         <link href="{{ asset('backend/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
     </head>
 
     <body>
@@ -36,13 +35,13 @@
                         <div class="d-flex flex-column h-100">
                             <div class="mb-4 mb-md-5 text-center">
                                 <a href="index.html" class="d-block auth-logo">
-                                    <img src="{{ asset('backend/assets/images/logo-sm.svg') }}" alt="" height="28"> <span class="logo-txt">Client Login</span>
+                                    <img src="{{ asset('backend/assets/images/logo-sm.svg') }}" alt="" height="28"> <span class="logo-txt">Restaurant Register</span>
                                 </a>
                             </div>
                             <div class="auth-content my-auto">
                                 <div class="text-center">
-                                    <h5 class="mb-0">Welcome Back !</h5>
-                                    <p class="text-muted mt-2">Sign in to continue to Client.</p>
+                                    <h5 class="mb-0">Welcome Back to Cravings!</h5>
+                                    <p class="text-muted mt-2">Sign in to continue to Restaurant.</p>
                                 </div>
 
     @if ($errors->any())
@@ -54,13 +53,26 @@
     @if (Session::has('error'))
         <li>{{ Session::get('error') }}</li>
     @endif
-    
+
     @if (Session::has('success'))
         <li>{{ Session::get('success') }}</li>
-    @endif   
-                             
-<form class="mt-4 pt-2" action="{{ route('client.login_submit') }}"  method="post">
+    @endif     
+
+<form class="mt-4 pt-2" action="{{ route('client.register.submit') }}"  method="post">
     @csrf
+
+    <div class="mb-3">
+        <label class="form-label">Restaurant Name</label>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Phone">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address">
+    </div>
 
     <div class="mb-3">
         <label class="form-label">Email</label>
@@ -73,7 +85,7 @@
             </div>
             <div class="flex-shrink-0">
                 <div class="">
-                    <a href="{{ route('admin.forget_password') }}" class="text-muted">Forgot password?</a>
+                    <a href="{{ route('client.forget_password') }}" class="text-muted">Forgot password?</a>
                 </div>
             </div>
         </div>
@@ -83,16 +95,9 @@
             <button class="btn btn-light shadow-none ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
         </div>
     </div>
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-check">
-                
-            </div>  
-        </div>
-        
-    </div>
+
     <div class="mb-3">
-        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Log In</button>
+        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Register</button>
     </div>
 </form>
 
@@ -124,7 +129,7 @@
                                 </div>
 
                                 <div class="mt-5 text-center">
-                                    <p class="text-muted mb-0">Don't have an account ? <a href="./client_register.blade.php"
+                                    <p class="text-muted mb-0">Don't have an account ? <a href="auth-register.html"
                                             class="text-primary fw-semibold"> SignUp now </a> </p>
                                 </div>
                             </div>
@@ -265,34 +270,6 @@
         <script src="{{ asset('backend/assets/libs/pace-js/pace.min.js') }}"></script>
         <!-- password addon init -->
         <script src="{{ asset('backend/assets/js/pages/pass-addon.init.js') }}"></script>
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-
- @if(Session::has('message'))
- <script>
- var type = "{{ Session::get('alert-type','info') }}"
- switch(type){
-    case 'info':
-    toastr.info(" {{ Session::get('message') }} ");
-    break;
-
-    case 'success':
-    toastr.success(" {{ Session::get('message') }} ");
-    break;
-
-    case 'warning':
-    toastr.warning(" {{ Session::get('message') }} ");
-    break;
-
-    case 'error':
-    toastr.error(" {{ Session::get('message') }} ");
-    break; 
- }
-
-</script>
- @endif 
-
 
     </body>
 

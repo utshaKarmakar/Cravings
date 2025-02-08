@@ -46,19 +46,17 @@
                                 </div>
 
     @if ($errors->any())
-        @foreach ($errors->all() as $error)
-            <li>{{$error }}</li>
-        @endforeach
-    @endif
+    @foreach ($errors->all() as $error)
+        <li>{{$error }}</li>
+    @endforeach
+@endif
 
-    @if (Session::has('error'))
-        <li>{{ Session::get('error') }}</li>
-    @endif
-    
-    @if (Session::has('success'))
-        <li>{{ Session::get('success') }}</li>
-    @endif   
-                             
+@if (Session::has('error'))
+    <li>{{ Session::get('error') }}</li>
+@endif
+@if (Session::has('success'))
+    <li>{{ Session::get('success') }}</li>
+@endif                            
 <form class="mt-4 pt-2" action="{{ route('client.login_submit') }}"  method="post">
     @csrf
 
@@ -124,12 +122,12 @@
                                 </div>
 
                                 <div class="mt-5 text-center">
-                                    <p class="text-muted mb-0">Don't have an account ? <a href="./client_register.blade.php"
-                                            class="text-primary fw-semibold"> SignUp now </a> </p>
+                                    <p class="text-muted mb-0">Don't have an account ? <a href="auth-register.html"
+                                            class="text-primary fw-semibold"> Signup now </a> </p>
                                 </div>
                             </div>
                             <div class="mt-4 mt-md-5 text-center">
-                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Cravings</p>
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> EasyLearing   . Crafted with <i class="mdi mdi-heart text-danger"></i> by EasyLearing</p>
                             </div>
                         </div>
                     </div>

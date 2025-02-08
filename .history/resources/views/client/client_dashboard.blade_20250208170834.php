@@ -108,8 +108,8 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
         
-    @if(Session::has('message'))
-        <script>
+         @if(Session::has('message'))
+<script>
 
          var type = "{{ Session::get('alert-type','info') }}"
          switch(type){
@@ -128,10 +128,10 @@
             case 'error':
             toastr.error(" {{ Session::get('message') }} ");
             break; 
-        }
+         }
           
         </script>
-    @endif
+        @endif
         
     </body>
 

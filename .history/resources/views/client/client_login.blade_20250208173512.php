@@ -42,23 +42,21 @@
                             <div class="auth-content my-auto">
                                 <div class="text-center">
                                     <h5 class="mb-0">Welcome Back !</h5>
-                                    <p class="text-muted mt-2">Sign in to continue to Client.</p>
+                                    <p class="text-muted mt-2">Signin to continue to Client.</p>
                                 </div>
 
     @if ($errors->any())
-        @foreach ($errors->all() as $error)
-            <li>{{$error }}</li>
-        @endforeach
-    @endif
+    @foreach ($errors->all() as $error)
+        <li>{{$error }}</li>
+    @endforeach
+@endif
 
-    @if (Session::has('error'))
-        <li>{{ Session::get('error') }}</li>
-    @endif
-    
-    @if (Session::has('success'))
-        <li>{{ Session::get('success') }}</li>
-    @endif   
-                             
+@if (Session::has('error'))
+    <li>{{ Session::get('error') }}</li>
+@endif
+@if (Session::has('success'))
+    <li>{{ Session::get('success') }}</li>
+@endif                            
 <form class="mt-4 pt-2" action="{{ route('client.login_submit') }}"  method="post">
     @csrf
 
@@ -124,7 +122,7 @@
                                 </div>
 
                                 <div class="mt-5 text-center">
-                                    <p class="text-muted mb-0">Don't have an account ? <a href="./client_register.blade.php"
+                                    <p class="text-muted mb-0">Don't have an account ? <a href="auth-register.html"
                                             class="text-primary fw-semibold"> SignUp now </a> </p>
                                 </div>
                             </div>

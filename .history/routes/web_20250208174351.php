@@ -85,7 +85,7 @@ Route::post('/client/login_submit', [ClientController::class, 'ClientLoginSubmit
 Route::get('/client/register', [ClientController::class, 'ClientRegister'])->name('client.register');
 Route::post('/client/register/submit', [ClientController::class, 'ClientRegisterSubmit'])->name('client.register.submit');
 
-// Client er logout
+// 
 Route::get('/client/logout', [ClientController::class, 'ClientLogout'])->name('client.logout');
 
 
