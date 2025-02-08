@@ -76,7 +76,7 @@ class ClientController extends Controller
     public function ClientProfile(){
         $id = Auth::guard('client')->id();
         $profileData = Client::find($id);
-        return view('client.client_profile',compact('profileData'));
+        return view('client.client_profile',compact('profileData','city'));
      }
     // End Method 
 
@@ -88,6 +88,8 @@ class ClientController extends Controller
         $data->email = $request->email;
         $data->phone = $request->phone;
         $data->address = $request->address;
+        $data->city_id = $request->city_id;
+        $data->shop_info = $request->shop_info; 
 
         $oldPhotoPath = $data->photo;
 
