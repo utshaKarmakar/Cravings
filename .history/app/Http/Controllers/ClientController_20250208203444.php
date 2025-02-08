@@ -89,6 +89,7 @@ class ClientController extends Controller
         $data->phone = $request->phone;
         $data->address = $request->address;
 
+
         $oldPhotoPath = $data->photo;
 
         if ($request->hasFile('photo')) {
