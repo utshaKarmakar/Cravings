@@ -21,7 +21,7 @@
       <link href="{{ asset('frontend/css/osahan.css')}}" rel="stylesheet">
       <!-- Owl Carousel -->
       <link rel="stylesheet" href="{{ asset('frontend/vendor/owl-carousel/owl.carousel.css')}}">
-      <link rel="stylesheet" href="{{ asset('frontend/vendor/owl-carousel/owl.theme.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/vendor/owl-carousel/owl.theme.css')}}">
    </head>
    <body>
       <div class="homepage-header">
