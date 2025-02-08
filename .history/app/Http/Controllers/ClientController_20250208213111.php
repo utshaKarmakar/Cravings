@@ -14,10 +14,10 @@ class ClientController extends Controller
    }
    // End Method 
 
-    public function ClientRegister(){
-        return view('client.client_register');
+   public function ClientRegister(){
+    return view('client.client_register');
     }
-    // End Method 
+// End Method 
 
     public function ClientRegisterSubmit(Request $request){
         $request->validate([
