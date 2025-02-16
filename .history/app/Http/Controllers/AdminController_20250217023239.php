@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\AdminService;
-use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -74,7 +73,6 @@ class AdminController extends Controller
 
     public function AdminPasswordUpdate(Request $request)
     {
-        $adminId = Auth::guard('admin')->id();
-        return $this->adminService->changePassword($adminId, $request->all());
+        return $this->adminService->changePassword($request);
     }
 }
