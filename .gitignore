@@ -1,6 +1,5 @@
 <h1>Total File will be added into <span>.gitignore</span> file</h1>
 
-    .history
     #node ignore
     # Logs
     logs
@@ -133,3 +132,4 @@
     .yarn/install-state.gz
     .pnp.*
 node_modules
+*.history/
