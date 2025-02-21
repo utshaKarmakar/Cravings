@@ -17,6 +17,20 @@ class ClientController extends Controller
         $this->clientService = $clientService;
     }
 
+    public function ClientRegister()
+    {
+        return view('client.client_register');
+    }
+
+    public function ClientLogin()
+    {
+        return view('client.client_login');
+    }
+
+    public function ClientDashboard()
+    {
+        return view('client.index');
+    }
     public function ClientRegisterSubmit(Request $request)
     {
         $request->validate([
