@@ -124,23 +124,37 @@ class ClientController extends Controller
         }
      }
 
-    public function ClientPasswordUpdate(Request $request)
-    {
+     public function ClientChangePassword(){
+        $id = Auth::guard('client')->id();
+        $profileData = Client::find($id);
+        return view('client.client_change_Password',compact('profileData'));
+     }
+      // End Method 
+
+      public function ClientPasswordUpdate(Request $request){
+        $client = Auth::guard('client')->user();
         $request->validate([
             'old_password' => 'required',
-            'new_password' => 'required|confirmed',
+            'new_password' => 'required|confirmed'
         ]);
-
-        if (!$this->clientService->changeClientPassword($request->all())) {
-            return back()->with([
-                'message' => 'Old Password Does Not Match!',
-                'alert-type' => 'error',
-            ]);
+ 
+        if (!Hash::check($request->old_password,$client->password)) {
+            $notification = array(
+                'message' => 'Old Password Does not Match!',
+                'alert-type' => 'error'
+            );
+            return back()->with($notification);
         }
-
-        return back()->with([
-            'message' => 'Password Changed Successfully',
-            'alert-type' => 'success',
+        /// Update the new password 
+        Client::whereId($client->id)->update([
+            'password' => Hash::make($request->new_password)
         ]);
-    }
+
+                $notification = array(
+                'message' => 'Password Change Successfully',
+                'alert-type' => 'success'
+            );
+            return back()->with($notification);
+     }
+      // End Method 
 }
