@@ -15,7 +15,7 @@ Route::get('/', [UserController::class, 'Index'])->name('index');
 
 
 
-Route::get('/dashboard', function () {
+Route::get('/dashbo', function () {
     return view('frontend.dashboard.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
