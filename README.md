@@ -241,11 +241,15 @@ Figma Design   : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cr
 			 <td>Checkpoint 1</td> 
 			 <td>
 				 <ul>
-					 <li>Frontend, Backend, Database setup</li>
+					<li>Frontend, Backend, Database setup</li>
 					<li>Customer registration and login pages</li>
 					<li>customer authentication</li>
-					<li>fetching a list of restaurants and  menu display page</li>
-					<li>Table for User, Restaurants and MenuItem at Database</li>
+                    <li>Admin panel setup</li>
+                    <li>Restaurant authentication</li>
+                    <li>Restaurant panel setup</li>
+                    <li>Customer Profile Setup</li>
+                    <li>Admin Backend Category</li>
+                    <li>fetching a list of restaurants and  menu display page</li>
 				</ul>
 			</td>
 		 </tr> 
@@ -253,10 +257,9 @@ Figma Design   : <a href="https://www.figma.com/design/mIyp8Q47ff0GPxNW5YWKlt/Cr
 			 <td>Checkpoint 2</td> 
 			 <td>
 				 <ul>
-					 <li>Customers My Account</li>
+                     <li>Table for User, Restaurants and MenuItem at Database</li>
 					 <li>Order History</li>
 					 <li>Multi Item Cart functionality</li>
-					 <li>Payment options</li>
 					 <li>Approve or Reject new Restaurants registration by Admin</li>
 					 <li>Restaurant Dash Board</li>
 					 <li>Admin Dashboard</li>
