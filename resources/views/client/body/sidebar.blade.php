@@ -1,9 +1,5 @@
-@php
-    $id = Auth::guard('client')->id();
-    $client = App\Models\Client::find($id);
-    $status = $client->status;
-@endphp
 <div class="vertical-menu">
+
     <div data-simplebar class="h-100">
 
         <!--- Sidemenu -->
@@ -26,16 +22,17 @@
             </a>
             <ul class="sub-menu" aria-expanded="false">
                 <li>
-                    <a href="{{route('all.menu')}}">
+                    <a href="{{ route('all.menu') }}">
                         <span data-key="t-calendar">All Menu</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="apps-chat.html">
+                    <a href="{{ route('add.menu') }}">
                         <span data-key="t-chat">Add Menu</span>
                     </a>
-                </li>
+                </li> 
+               
             </ul>
         </li>
 
@@ -47,9 +44,11 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="auth-login.html" data-key="t-login">Login</a></li>
                 <li><a href="auth-register.html" data-key="t-register">Register</a></li>
+                
             </ul>
         </li>
 
+         
         <li class="menu-title mt-2" data-key="t-components">Elements</li>
 
         <li>
@@ -60,6 +59,7 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="ui-alerts.html" data-key="t-alerts">Alerts</a></li>
                 <li><a href="ui-buttons.html" data-key="t-buttons">Buttons</a></li>
+                
             </ul>
         </li>
 
@@ -71,8 +71,10 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="extended-lightbox.html" data-key="t-lightbox">Lightbox</a></li>
                 <li><a href="extended-rangeslider.html" data-key="t-range-slider">Range Slider</a></li>
+                
             </ul>
         </li>
+  
 
     </ul>
 
@@ -82,7 +84,7 @@
             <div class="mt-4">
                 <h5 class="alertcard-title font-size-16">Unlimited Access</h5>
                 <p class="font-size-13">Upgrade your plan from a Free trial, to select ‘Business Plan’.</p>
-                
+               
             </div>
         </div>
     </div>
