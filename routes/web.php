@@ -2,12 +2,10 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\AdminController;
-
 use App\Http\Controllers\ClientController;
-
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Admin\CategoryController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -54,6 +52,20 @@ Route::post('/admin/password_submit', [AdminController::class, 'AdminPasswordSub
 Route::get('/admin/reset_password/{token}/{email}', [AdminController::class, 'AdminResetPassword']);
 
 Route::post('/admin/reset_password_submit', [AdminController::class, 'AdminResetPasswordSubmit'])->name('admin.reset_password_submit');
+
+
+// All admin category
+Route::middleware('admin')->group(function (){
+
+    Route::controller(CategoryController::class)->group(function(){
+        Route::get('/all/category', 'AllCategory')->name('all.category');
+        Route::get('/add/category', 'AddCategory')->name('add.category');
+        Route::post('/store/category', 'StoreCategory')->name('category.store');
+    });
+
+});
+
+// End Admin Middleware
 
 
 
