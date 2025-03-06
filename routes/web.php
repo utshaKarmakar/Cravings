@@ -7,6 +7,8 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Client\RestaurantController;
+use App\Http\Controllers\Admin\CategoryController;
+
 
 // Route::get('/', function () {
 // return view('welcome');
